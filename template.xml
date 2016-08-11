@@ -1,4 +1,4 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
-<template xmlns="http://www.w3.org" version="1" name="UniFreiburg ILIAS 5.x Skin">
-    <style name="UniFreiburg ILIAS 5.x Skin" id="unifr5x" image_directory="images"/>
+<template xmlns="http://www.w3.org" version="1" name="PhysikOnline Skin auf Basis von *UniFreiburg ILIAS 5.x Skin*">
+    <style name="PhysikOnline Skin 5.1" id="po-v5.1" image_directory="images"/>
 </template>
