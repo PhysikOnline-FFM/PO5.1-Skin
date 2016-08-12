@@ -12445,36 +12445,19 @@ div.ilHeaderAlert {
   background-color: #aa010f;
   float: right;
 }
-/* make the alert warning message box (delete confirmation etc. better visible ) */
-.alert-warning {
-  background-color: #fe7613;
-  border-color: #451d00;
-  color: #aa4801;
-}
-/* Left Banner, Content normal */
-@media screen and (min-width: 767px) {
-  .ilTopBar {
-    height: 100px;
-  }
-  #ilTopNav {
-    margin: -38px 0 0 -2px;
-  }
-  #ilTopNav.navbar {
-    min-height: 35px;
-  }
-  #ilTopBarNav .dropdown-menu {
-    top: 76px !important;
-  }
-}
 /**
 * ILIAS Head
 */
+.ilMainHeader {
+  height: auto;
+}
 .ilMainHeader.ilTopFixed {
   top: 100px;
   height: 29px;
 }
 .ilFixedTopSpacer {
-  padding-top: 140px;
+  margin-top: 0;
+  padding-top: 5px;
 }
 #ilTopBar.ilTopBar {
   background-color: #005eaa;
@@ -12482,30 +12465,30 @@ div.ilHeaderAlert {
   background-repeat: repeat-x;
   height: 100px;
 }
-.po5-TitleContainer {
-  display: inline-block;
+#ilTopBar.ilTopBar .po5-TitleContainer {
+  float: left;
   margin: 8px 0 0 0;
 }
-.po5-TitleContainer .po5-Logo {
+#ilTopBar.ilTopBar .po5-TitleContainer .po5-Logo {
   margin-right: 25px;
   padding-right: 25px;
   float: left;
   border-right: 1px solid white;
 }
-.po5-TitleContainer #po5-gufLogo {
-  max-height: 80px;
+#ilTopBar.ilTopBar .po5-TitleContainer #po5-gufLogo {
+  height: 80px;
 }
-.po5-TitleContainer .ilTopTitle {
+#ilTopBar.ilTopBar .po5-TitleContainer .ilTopTitle {
   font-size: 30pt;
   font-family: "Times New Roman", Times, serif;
   font-weight: normal;
   padding: 12px 0 0 200px;
   float: none;
 }
-.po5-TitleContainer .ilTopSubtitle {
+#ilTopBar.ilTopBar .po5-TitleContainer .ilTopSubtitle {
   padding: 2px 0 0 200px;
 }
-div#po3-skyline {
+#ilTopBar.ilTopBar div#po3-skyline {
   /* Absolut positioniert... */
 
   display: inline-block;
@@ -12513,7 +12496,7 @@ div#po3-skyline {
   left: 600px;
   top: 34px;
 }
-div#po3-skyline canvas {
+#ilTopBar.ilTopBar div#po3-skyline canvas {
   position: absolute;
   top: 0;
   left: 0;
@@ -12523,7 +12506,7 @@ div#po3-skyline canvas {
   -o-transition: opacity 600ms linear;
   transition: opacity 600ms linear;
 }
-div#po3-skyline a.running canvas {
+#ilTopBar.ilTopBar div#po3-skyline a.running canvas {
   opacity: 1;
   -webkit-transition: opacity 600ms linear;
   -moz-transition: opacity 600ms linear;
@@ -12533,8 +12516,9 @@ div#po3-skyline a.running canvas {
 /* Responsive MainMenu Button */
 #ilTopNav button.navbar-toggle {
   background-color: #004277;
-  left: 40px;
-  top: 0px;
+}
+#ilTopNav button.navbar-toggle:hover {
+  background-color: #005eaa;
 }
 /**
 * MainMenu
@@ -12542,14 +12526,7 @@ div#po3-skyline a.running canvas {
 .ilMainMenu.ilTopFixed {
   top: 138px;
 }
-#ilTopBarNav .dropdown.open,
-#ilTopBarNav li:hover,
-#ilTopBarNav li:focus {
-  background-color: #005eaa;
-}
-#ilTopNav .navbar-nav > .open > a:focus {
-  border-top: none;
-}
+#ilTopNav .navbar-nav > .open > a:focus,
 #ilTopNav .navbar-nav > li.open > a {
   border-top: none;
 }
@@ -12558,7 +12535,7 @@ div#po3-skyline a.running canvas {
   padding: 0;
 }
 #ilTopNav .navbar-nav > li {
-  margin: 0px;
+  margin: 0;
 }
 #ilTopNav .navbar-nav > li > a {
   border-top: 0px;
@@ -12591,7 +12568,7 @@ div#po3-skyline a.running canvas {
 }
 .dropdown-menu,
 .dropdown-menu li > a {
-  background-color: #f1f1f1;
+  background-color: #dfdfdf;
   color: #393939;
 }
 .dropdown-menu li > a:hover,
@@ -12602,9 +12579,31 @@ div#po3-skyline a.running canvas {
 /**
 * User Setting Buttons
 */
+#ilTopBarNav {
+  margin-top: 59px;
+}
 #ilTopBarNav > li > a {
   background-color: #004277;
-  top: 36px;
+}
+#ilTopBarNav > li > a:hover,
+#ilTopBarNav > li > a:active,
+#ilTopBarNav > li > a:focus {
+  background-color: #005eaa;
+}
+#ilTopBarNav .dropdown.open,
+#ilTopBarNav li:hover,
+#ilTopBarNav li:focus {
+  background-color: #005eaa;
+}
+#ilTopBarNav > .active > a,
+#ilTopBarNav > .open > a,
+#ilTopBarNav > .active > a:hover,
+#ilTopBarNav > .open > a:hover,
+#ilTopBarNav > .active > a:active,
+#ilTopBarNav > .open > a:active,
+#ilTopBarNav > .active > a:focus,
+#ilTopBarNav > .open > a:focus {
+  background-color: #dfdfdf;
 }
 #ilTopBarNav .dropdown-menu a {
   color: #393939;
@@ -12625,13 +12624,7 @@ div#po3-skyline a.running canvas {
 /* no left Banner, Content responsive */
 @media screen and (max-width: 767px) {
   #ilTopBar.ilTopBar {
-    background-image: url(images/schema_unifr_marg.png);
-    background-repeat: no-repeat;
     height: 40px;
-  }
-  #ilTopBarNav > li > a {
-    background-color: #007add;
-    top: 0px;
   }
   .ilTopFixed {
     left: 0px;
@@ -12639,16 +12632,22 @@ div#po3-skyline a.running canvas {
   .ilMainMenu.ilTopFixed {
     top: 40px;
   }
+  .ilFixedTopSpacer,
+  .ilFixedTopSpacerBarOnly {
+    margin-top: 10px;
+  }
+  #ilTopBarNav {
+    margin-top: 0px;
+  }
   #ilTopBarNav.dropdown-menu {
     background-color: #f1f1f1;
-    top: 40px;
   }
   .ilMainHeader,
   .ilMainHeader.ilTopFixed,
   .ilTopSubtitle,
   .ilTopTitle,
   .po5-TitleContainer,
-  .po3-skyline {
+  #ilTopBar.ilTopBar div#po3-skyline {
     display: none;
   }
   #ilTopNav {
@@ -12787,6 +12786,12 @@ div.ilBlockRow1 {
 .ilFrmPostTitle .alert-danger {
   background-color: inherit !important;
   border: inherit !important;
+}
+/* make the alert warning message box (delete confirmation etc. better visible ) */
+.alert-warning {
+  background-color: #fe7613;
+  border-color: #451d00;
+  color: #aa4801;
 }
 /*
  * Bei Container-Auflistungen (Kategorieseiten etc.) "Aktionen"

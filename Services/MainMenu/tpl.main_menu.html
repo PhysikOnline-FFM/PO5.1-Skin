@@ -1,9 +1,9 @@
-<div id="ilTopBar" class="ilTopBar ilTopFixed{TOPBAR_CLASS}">
+<div id="ilTopBar" class="ilTopBar {TOPBAR_CLASS}"><!-- .ilTopFixed -->
 	<div class="container-fluid ilContainerWidth">
 		<div class="row">
             <div class="po5-TitleContainer">
                 <div class="po5-Logo">
-                <img id="po5-gufLogo" src="/Customizing/global/skin/po-v5.1/images/uni_head_official-colorinverted.svg" alt="" />
+					<img id="po5-gufLogo" src="/Customizing/global/skin/po-v5.1/images/uni_head_official-colorinverted.svg" alt="" />
                 </div>
                 <!-- BEGIN header_top_title -->
                 <div class="ilTopTitle">{TXT_HEADER_TITLE}</div>
@@ -91,7 +91,7 @@
 	</script><!-- END osd_enabled -->
 <!-- BEGIN osd_container --><div class="osdNotificationContainer"></div><!-- END osd_container -->
 <!-- BEGIN main_menu_bl -->
-<div class="ilMainHeader ilTopFixed">
+<div class="ilMainHeader"><!-- .ilTopFixed -->
 	<header class="container-fluid ilContainerWidth">
 		<div class="row">
 			<!-- <a class="navbar-brand" href="{HEADER_URL}" target="_top">
@@ -102,31 +102,31 @@
 	</header>
 </div>
 <div class="ilMainMenu ilTopFixed">
-<div class="container-fluid ilContainerWidth">
-	<div class="row">
-		<nav id="ilTopNav" class="navbar navbar-default" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ilMainMenuEntries">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <!-- <a class="navbar-brand" href="#">Brand</a> -->
-            </div>
+	<div class="container-fluid ilContainerWidth">
+		<div class="row">
+			<nav id="ilTopNav" class="navbar navbar-default" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ilMainMenuEntries">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- <a class="navbar-brand" href="#">Brand</a> -->
+				</div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="ilMainMenuEntries">
-                {MAIN_MENU_LIST_ENTRIES}
-            </div><!-- /.navbar-collapse -->
-		</nav>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="ilMainMenuEntries">
+					{MAIN_MENU_LIST_ENTRIES}
+				</div><!-- /.navbar-collapse -->
+			</nav>
 
-		<!-- BEGIN screen_id -->
-		<div id="il_screen_id" class="ilHighlighted small">Screen-ID: {SCREEN_ID}</div>
-		<!-- END screen_id -->
-		<!-- BEGIN top_section --><!-- END top_section -->
+			<!-- BEGIN screen_id -->
+			<div id="il_screen_id" class="ilHighlighted small">Screen-ID: {SCREEN_ID}</div>
+			<!-- END screen_id -->
+			<!-- BEGIN top_section --><!-- END top_section -->
+		</div>
 	</div>
-</div>
 </div>
 <!-- END main_menu_bl -->
