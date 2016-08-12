@@ -2,10 +2,19 @@
 <div id="ilTopBar" class="ilTopBar ilTopFixed">
 	<div class="container-fluid ilContainerWidth">
 		<div class="row">
-            <!-- BEGIN header_top_title -->
-            <div class="ilTopTitle">{TXT_HEADER_TITLE}</div>
-            <div class="ilTopSubtitle">Albert-Ludwigs-Universität Freiburg</div>
-            <!-- END header_top_title -->
+            <div class="po5-TitleContainer">
+                <div class="po5-Logo">
+                <img id="po5-gufLogo" src="/Customizing/global/skin/po-v5.1/images/uni_head_official-colorinverted.svg" alt="" />
+                </div>
+                <!-- BEGIN header_top_title -->
+                <div class="ilTopTitle">{TXT_HEADER_TITLE}</div>
+                <div class="ilTopSubtitle">Das eLearning-Portal des Fachbereichs Physik</div>
+                <!-- END header_top_title -->
+            </div>
+            <div id="po3-skyline">
+                <img src="/Customizing/global/skin/po-v5.1/images/skyline.png" alt="" />
+            </div>
+            
             <ul id="ilTopBarNav" class="">
                 <!-- BEGIN lang_select -->
                 <li class="dropdown"><a id="mm_lang_sel" href="#" class="dropdown-toggle" data-toggle="dropdown">{TXT_LANGSELECT} <span class="caret"></span></a>
@@ -19,14 +28,14 @@
 <div class="ilMainHeader ilTopFixed">
 </div>
 <div class="ilMainMenu ilTopFixed">
-<div class="container-fluid ilContainerWidth">
+    <div class="container-fluid ilContainerWidth">
         <div class="row">
-                <nav id="ilTopNav" class="navbar navbar-default" role="navigation">
-                </nav> 
+            <nav id="ilTopNav" class="navbar navbar-default" role="navigation">
+            </nav> 
         </div>
+    </div>
 </div>
-</div>
-<div id="mainspacekeeper" class="container">
+<div id="mainspacekeeper" class="container ilFixedTopSpacer">
 	<div class="row" style="position: relative;">
 		<div id="fixed_content" class=" ilContentFixed">
 			<div id="mainscrolldiv" class="ilStartupFrame container">
@@ -52,7 +61,9 @@
 					</div>
 					<!-- END success -->
 				</div>
-				{STARTUP_CONTENT}
+				<div class="po3-startupContent">
+                {STARTUP_CONTENT}
+                </div>
 				<!-- BEGIN links_bl -->
 				<div class="ilCenter" style="padding-top: 25px">
 					<!-- BEGIN link_item_bl -->

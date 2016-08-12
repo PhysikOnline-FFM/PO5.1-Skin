@@ -1,5 +1,32 @@
-//== Colors
+//== Variablen aus PO-V3.0
+@skin-url: "/Customizing/global/skin/po-v5.1/";
 
+@height-btn: 20px;
+@padding: 8px;
+@margin: 8px;
+
+@content-bg: #ffffff;
+
+@main-color: #005EAA;
+@lighter1: lighten(@main-color, 10%);
+@lighter2: lighten(spin(@main-color, 10), 20%);
+@darker1: darken(@main-color, 10%);
+@darker2: darken(spin(@main-color, -10), 20%);
+
+@second-color: #393939;
+@highlight1: lighten(@second-color, 25%);
+@highlight2: lighten(@second-color, 35%);
+@highlight3: lighten(@second-color, 50%);
+@highlight4: lighten(@second-color, 65%);
+
+@green: #01aa48;
+@red: #aa010f;
+@purpel: #aa0163;
+@brown: #aa4801;
+@border-color: @highlight3;
+
+//== Neue Variablen für PO-V5.1
+//== Colors
 /*		Color scheme
 		Dark BLue: #0f2152;
 		Mid Blue: #4c6586;
@@ -11,27 +38,26 @@
 		ILIAS 4 MainMenu Color: #c8e6ff;
 */
 
-@brand-primary: #4C6586;
-@brand-secondary: #6EA03C;
-@brand-success: #6EA03C;
-@brand-info: #DCB496;
-@brand-warning: #FA8228;
-@brand-danger: #FA8228;
+@brand-primary: @main-color;
+@brand-secondary: #01aa9d;
+@brand-success: @green;
+@brand-info: @purpel;
+@brand-warning: @brown;
+@brand-danger: @red;
 
+@background-images-path: "/templates/default/images/";
+@web-font-path: "/templates/default/fonts/";
+@icon-font-path: "/Services/UICore/lib/bootstrap-3.2.0/fonts/";
 
-@background-images-path: "../../../../templates/default/images/";
-@web-font-path: "../../../../templates/default/fonts/";
-@icon-font-path: "../../../../Services/UICore/lib/bootstrap-3.2.0/fonts/";
-
-@mid-gray: #434343;
-@il-primary-container-bg: #FFFFFF;
-@il-secondary-container-bg: #F9F9F9;
+@mid-gray: @highlight2;
+@il-primary-container-bg: @content-bg;
+@il-secondary-container-bg: @highlight3;
 
 @il-highlight-bg: #FFFFD0;
-@il-brand-3rd: #21C5D8;
-@gray-dark: #434343;
+@il-brand-3rd: @second-color;
+@gray-dark: @highlight1;
 //== Scaffolding
-@body-bg: #F0F0F0;
+@body-bg: #F1F1F1;
 @text-color: @gray-dark;
 @link-color: lighten(@brand-primary, 5%);
 @link-hover-color: darken(@link-color, 15%);
@@ -51,7 +77,6 @@
 @font-size-h6: @font-size-base;
 
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
-
 @padding-base-vertical: 3px;
 @padding-base-horizontal: 8px;
 
@@ -84,7 +109,6 @@
 //== Breadcrumbs
 //
 //##
-
 @breadcrumb-padding-vertical: 6px;
 @breadcrumb-padding-horizontal: 6px;
 //** Breadcrumb background color
@@ -99,15 +123,13 @@
 //== Buttons
 //
 //##
-
 @btn-default-color: @link-color;
-@btn-default-border: #D0D0D0;
-@btn-default-bg: #FEFEFE;
+@btn-default-border: darken(@link-color,20%);
+@btn-default-bg: @content-bg;
 
 //== Badges
 //
 //##
-
 @badge-color: #FFFFFF;
 //** Linked badge text color on hover
 @badge-link-hover-color: #FFFFFF;
@@ -141,7 +163,6 @@
 //== Panels
 //
 //##
-
 @panel-bg: @il-secondary-container-bg;
 @panel-body-padding: 15px;
 @panel-heading-padding: 10px 15px;
@@ -163,14 +184,12 @@
 //== DropDowns
 //
 //##
-@dropdown-link-hover-bg: #F2F2F2;
 @dropdown-link-hover-bg: lighten(@brand-primary, 53%);
 ;
 
 //== Tables
 //
 //## Customizes the `.table` component with basic values, each used across all table variations.
-
 //** Padding for `<th>`s and `<td>`s.
 @table-cell-padding: 8px;
 //** Padding for cells in `.table-condensed`.
@@ -184,6 +203,6 @@
 //** Border color for table and cell borders.
 @table-border-color: #DDDDDD;
 
-@il-table-head-bg: lighten(@il-secondary-container-bg, 1%);
-@il-data-table-bg: @il-secondary-container-bg;
-@il-table-cmd-bg: @il-secondary-container-bg;
+@il-table-head-bg: @highlight3;
+@il-data-table-bg: @highlight4;
+@il-table-cmd-bg: @highlight4;

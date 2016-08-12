@@ -18,11 +18,14 @@
 	<!-- BEGIN SyntaxStyle -->
 	<link rel="stylesheet" type="text/css" href="{LOCATION_SYNTAX_STYLESHEET}" />
 	<!-- END SyntaxStyle -->
+    
+    <!-- Start Philip 09/2016 - PO-V5.1 -->
+	<!--<script src="/Customizing/global/skin/po-v5.1/js/po-v5.1.js" type="text/javascript"></script> -->
+	<!-- Ende Philip 09/2016 - PO-V5.1 -->
 </head>
 <body <!-- BEGIN body_class -->class="{BODY_CLASS}"<!-- END body_class -->>
 <div id="drag_zmove"></div>
-<div id="unifrLeftBanner"><a href="http://www.uni-freiburg.de/"><div id="unifrLeftBannerLogo"></div></a></div>
-<div id="unifrContent">
+<div class="po3-contentBlock">
 	{MAINMENU}
 
 	<!-- BEGIN sr_focus -->
@@ -37,7 +40,7 @@
 			<div id="left_nav" class="ilLeftNav">{EXPLORER}</div><!-- {TXT_EXPLORER_HEADER} {ACTION} -->
 			<!-- END il_toc -->
 	<div id="fixed_content" class="<!-- BEGIN left_nav_space -->ilLeftNavSpace<!-- END left_nav_space --> ilContentFixed">
-		<div id="mainscrolldiv">
+	<div id="mainscrolldiv">
 	{NAVIGATION_HISTORY}
 	<!-- BEGIN ilLocator -->
 	{STATUSLINE}

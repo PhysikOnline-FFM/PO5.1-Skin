@@ -57,15 +57,27 @@
 	<!-- END CalendarJS -->
 	<!-- BEGIN js_file -->
 	<script type="text/javascript" src="{JS_FILE}"></script><!-- END js_file -->
+    
+    <!-- Start Philip 09/2016 - PO-V5.1 -->
+	<!--<script src="/Customizing/global/skin/po-v5.1/js/po-v5.1.js" type="text/javascript"></script> -->
+	<!-- Ende Philip 09/2016 - PO-V5.1 -->
+    
+	<!-- Start Philip 05/2016 - PO-Unterstuetzt -->
+    <!--<script src="/local/po-unterstuetzt/po-unterstuetzt.js" type="text/javascript"></script>-->
+    <!-- Ende Philip 05/2016 - PO-Unterstuetzt -->
+    
 	{SESSION_REMINDER}
 </head>
 <body <!-- BEGIN body_class -->class="{BODY_CLASS}" <!-- END body_class --> {BODY_ATTRIBUTES}>
 <!-- drag_zmove used, e.g. in learnin modules to drag layout borders -->
 <div id="drag_zmove"></div>
-<div id="unifrLeftBanner"><a href="http://www.uni-freiburg.de/"><div id="unifrLeftBannerLogo"></div></a></div>
-<div id="unifrContent">
-<div id="ilAll">{CONTENT}</div>
+
+<div class="po3-contentContainer">
+	<div class="po3-contentBlock">
+		<div id="ilAll">{CONTENT}</div>
+	</div>
 </div>
+
 <!-- BEGIN on_load_code -->
 <script type="text/javascript">
 	il.Util.addOnLoad(function() {

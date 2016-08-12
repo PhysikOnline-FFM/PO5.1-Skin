@@ -18,17 +18,20 @@
 	<!-- BEGIN css_file -->
 	<link rel="stylesheet" type="text/css" href="{CSS_FILE}" media="{CSS_MEDIA}" />
 	<!-- END css_file -->
+    
+    <!-- Start Philip 09/2016 - PO-V5.1 -->
+	<!--<script src="/Customizing/global/skin/po-v5.1/js/po-v5.1.js" type="text/javascript"></script> -->
+	<!-- Ende Philip 09/2016 - PO-V5.1 -->
 </head>
 <body <!-- BEGIN body_class -->class="{BODY_CLASS}"<!-- END body_class -->>
-	<div id="unifrLeftBanner"><a href="http://www.uni-freiburg.de/"><div id="unifrLeftBannerLogo"></div></a></div>
-	<div id="unifrContent">
+<div class="po3-contentBlock">
 	{MAINMENU}
 	<!-- BEGIN sr_focus -->
 	<script type="text/javascript">il.Util.addOnLoad(il.Util.setStdScreenReaderFocus);</script>
 	<!-- END sr_focus -->
 
 	<!-- BEGIN pg_intro -->
-<div id="mainspacekeeper" class="container-fluid ilContainerWidth ilFixedTopSpacer">
+    <div id="mainspacekeeper" class="container-fluid ilContainerWidth ilFixedTopSpacer">
 	<div class="row" style="position: relative;">
 	<!-- END pg_intro -->
 	
@@ -118,8 +121,7 @@
 		</div>
 	</div>
 	<!-- END pg_outro -->
-	
-
+</div>
 <!-- BEGIN on_load_code -->
 <script type="text/javascript">
 il.Util.addOnLoad(function() {
