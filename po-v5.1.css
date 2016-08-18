@@ -12428,6 +12428,238 @@ table.mceToolbar td {
   color: #005eaa;
   border: 1px solid #005eaa;
 }
+div#po3-hauptseite-top {
+  padding: 0px;
+}
+div#po3-hauptseite-top div#po3-hauptseite-willkommen,
+div#po3-hauptseite-top div#po3-hauptseite-login {
+  margin-bottom: 24px;
+  display: inline-bock;
+  background-color: #ffffff;
+}
+div#po3-hauptseite-top div#po3-hauptseite-willkommen {
+  padding: 8px 16px;
+  min-height: 87px;
+  color: #797979;
+  text-align: center;
+}
+div#po3-hauptseite-top div#po3-hauptseite-willkommen h1 {
+  margin: 10px 0 2px 0;
+  color: #005eaa;
+  font-size: 1.65em;
+  text-align: center;
+}
+div#po3-hauptseite-top div#po3-hauptseite-willkommen p {
+  margin: 0;
+}
+div#po3-hauptseite-top div#po3-hauptseite-willkommen div#more-btn {
+  text-align: right;
+  margin: 5px 0;
+}
+div#po3-hauptseite-top div#po3-hauptseite-willkommen div#more-btn a {
+  color: #797979;
+  font-size: 0.8em;
+  margin-right: 2px;
+}
+div#po3-hauptseite-top div#po3-hauptseite-willkommen div#more-text {
+  margin-top: 16px;
+  text-align: justify;
+}
+div#po3-hauptseite-top div#po3-hauptseite-login {
+  padding: 8px;
+}
+div#po3-hauptseite-top div#po3-hauptseite-login input {
+  padding: 4px;
+}
+div#po3-hauptseite-top div#po3-hauptseite-login input#username,
+div#po3-hauptseite-top div#po3-hauptseite-login input#password {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+}
+div#po3-hauptseite-top div#po3-hauptseite-login input#username:hover,
+div#po3-hauptseite-top div#po3-hauptseite-login input#password:hover,
+div#po3-hauptseite-top div#po3-hauptseite-login input#username:focus,
+div#po3-hauptseite-top div#po3-hauptseite-login input#password:focus,
+div#po3-hauptseite-top div#po3-hauptseite-login input#username:active,
+div#po3-hauptseite-top div#po3-hauptseite-login input#password:active,
+div#po3-hauptseite-top div#po3-hauptseite-login input#username.simulate-hover,
+div#po3-hauptseite-top div#po3-hauptseite-login input#password.simulate-hover {
+  border: 1px solid #005eaa;
+}
+div#po3-hauptseite-top div#po3-hauptseite-login input#username {
+  width: 100%;
+  margin-bottom: 8px;
+}
+div#po3-hauptseite-top div#po3-hauptseite-login input#password {
+  width: 60%;
+}
+div#po3-hauptseite-top div#po3-hauptseite-login input.submit {
+  width: 38%;
+  margin-left: 1%;
+  border: 1px solid #005eaa;
+}
+div#po3-hauptseite-tile {
+  padding: 0px;
+  display: block;
+  clear: both;
+}
+div#po3-hauptseite-tile .po3-tile-row,
+div#po3-hauptseite-tile #po3-tile-veranstaltungen,
+div#po3-hauptseite-tile #po3-tile-schalter {
+  display: block;
+  text-align: center;
+}
+div#po3-hauptseite-tile .po3-tile {
+  opacity: 0.4;
+  -webkit-transition: opacity 200ms linear;
+  -moz-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+  height: 140px;
+  margin-top: 18px;
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+div#po3-hauptseite-tile .po3-tile .po3-tile-caption {
+  opacity: 0;
+  -webkit-transition: opacity 200ms linear;
+  -moz-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 16px;
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+div#po3-hauptseite-tile .po3-tile .po3-tile-caption .po3-tile-caption-main {
+  font-size: 1.6em;
+}
+div#po3-hauptseite-tile .po3-tile .po3-tile-caption .po3-tile-caption-sub {
+  font-size: 1.0em;
+  font-style: oblique;
+}
+div#po3-hauptseite-tile .po3-tile:hover,
+div#po3-hauptseite-tile .po3-tile:focus,
+div#po3-hauptseite-tile .po3-tile:active,
+div#po3-hauptseite-tile .simulate-hover {
+  opacity: 1;
+  -webkit-transition: opacity 150ms linear;
+  -moz-transition: opacity 150ms linear;
+  -o-transition: opacity 150ms linear;
+  transition: opacity 150ms linear;
+}
+div#po3-hauptseite-tile .po3-tile:hover .po3-tile-caption,
+div#po3-hauptseite-tile .po3-tile:focus .po3-tile-caption,
+div#po3-hauptseite-tile .po3-tile:active .po3-tile-caption,
+div#po3-hauptseite-tile .simulate-hover .po3-tile-caption {
+  opacity: 1;
+  -webkit-transition: opacity 150ms linear;
+  -moz-transition: opacity 150ms linear;
+  -o-transition: opacity 150ms linear;
+  transition: opacity 150ms linear;
+}
+div#po3-hauptseite-tile a .po3-tile-caption-sub {
+  color: #797979;
+}
+div#po3-hauptseite-tile #po3-tile-veranstaltungen {
+  height: 90px;
+  margin-top: 0px;
+}
+div#po3-hauptseite-tile #po3-tile-veranstaltungen .po3-tile-caption {
+  bottom: 10px;
+}
+div#po3-hauptseite-tile #po3-tile-schalter {
+  height: 30px;
+  opacity: 1;
+}
+div#po3-hauptseite-tile #po3-tile-schalter .po3-tile-caption {
+  bottom: 0;
+  opacity: 1;
+  height: 30px;
+  line-height: 30px;
+}
+div#po3-hauptseite-tile #po3-tile-schalter .po3-tile-caption .po3-tile-caption-main {
+  font-size: 1em;
+}
+div#po3-hauptseite-tile #po3-tile-theo,
+div#po3-hauptseite-tile #po3-tile-ebooks,
+div#po3-hauptseite-tile #po3-tile-exp,
+div#po3-hauptseite-tile #po3-tile-pwp {
+  width: 100%;
+}
+div#po3-hauptseite-tile .po3-tile-2col span.po3-tile-caption-main,
+div#po3-hauptseite-tile .po3-tile-2col span.po3-tile-caption-sub {
+  display: inline-block;
+  padding-right: 16px;
+  text-align: right;
+}
+div#po3-hauptseite-tile .po3-tile-2col .po3-tile-caption span:first-child {
+  float: left;
+  padding-right: 0;
+  padding-left: 16px;
+  text-align: left;
+}
+div#po3-hauptseite-tile .po3-tile-2col span.po3-tile-caption-main {
+  width: 60%;
+}
+div#po3-hauptseite-tile .po3-tile-2col span.po3-tile-caption-sub {
+  width: 40%;
+}
+div#po3-hauptseite-tile #po3-tile-veranstaltungen {
+  background-image: url("/Customizing/global/skin/po-v5.1/images/startseite/osz-hoersaal.jpg");
+}
+div#po3-hauptseite-tile #po3-tile-theo {
+  background-image: url("/Customizing/global/skin/po-v5.1/images/startseite/sterngerlach.jpg");
+}
+div#po3-hauptseite-tile #po3-tile-ebooks {
+  background-image: url("/Customizing/global/skin/po-v5.1/images/startseite/bib-ebooks-a.jpg");
+}
+div#po3-hauptseite-tile #po3-tile-exp {
+  background-image: url("/Customizing/global/skin/po-v5.1/images/startseite/cern-ddp.jpg");
+}
+div#po3-hauptseite-tile #po3-tile-pwp {
+  background-image: url("/Customizing/global/skin/po-v5.1/images/startseite/pwp-mitmachen.jpg");
+}
+div#po3-hauptseite-tile #po3-tile-veranstaltungen,
+div#po3-hauptseite-tile #po3-tile-theo,
+div#po3-hauptseite-tile #po3-tile-ebooks,
+div#po3-hauptseite-tile #po3-tile-exp,
+div#po3-hauptseite-tile #po3-tile-pwp {
+  background-size: cover;
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+div#po3-hauptseite-tile #po3-tile-veranstaltungen:hover,
+div#po3-hauptseite-tile #po3-tile-theo:hover,
+div#po3-hauptseite-tile #po3-tile-ebooks:hover,
+div#po3-hauptseite-tile #po3-tile-exp:hover,
+div#po3-hauptseite-tile #po3-tile-pwp:hover,
+div#po3-hauptseite-tile #po3-tile-veranstaltungen.simulate-hover,
+div#po3-hauptseite-tile #po3-tile-theo.simulate-hover,
+div#po3-hauptseite-tile #po3-tile-ebooks.simulate-hover,
+div#po3-hauptseite-tile #po3-tile-exp.simulate-hover,
+div#po3-hauptseite-tile #po3-tile-pwp.simulate-hover {
+  -webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: none;
+  filter: grayscale(0%);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'normal\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#normal");
+}
 /*
  * Page Style / Layout
  * Basiert auf Skin von Uni Freiburg.
@@ -12445,19 +12677,30 @@ div.ilHeaderAlert {
   background-color: #aa010f;
   float: right;
 }
+/* make the alert warning message box (delete confirmation etc. better visible ) */
+.alert-warning {
+  background-color: #fe7613;
+  border-color: #451d00;
+  color: #aa4801;
+}
+/* Left Banner, Content normal */
+@media screen and (min-width: 767px) {
+  .ilTopBar {
+    height: 100px;
+  }
+  #ilTopBarNav .dropdown-menu {
+    top: 76px !important;
+  }
+}
 /**
 * ILIAS Head
 */
 .ilMainHeader {
   height: auto;
-}
-.ilMainHeader.ilTopFixed {
-  top: 100px;
-  height: 29px;
+  margin: 0;
 }
 .ilFixedTopSpacer {
-  margin-top: 0;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 #ilTopBar.ilTopBar {
   background-color: #005eaa;
@@ -12465,30 +12708,30 @@ div.ilHeaderAlert {
   background-repeat: repeat-x;
   height: 100px;
 }
-#ilTopBar.ilTopBar .po5-TitleContainer {
-  float: left;
+.po5-TitleContainer {
+  display: inline-block;
   margin: 8px 0 0 0;
 }
-#ilTopBar.ilTopBar .po5-TitleContainer .po5-Logo {
+.po5-TitleContainer .po5-Logo {
   margin-right: 25px;
   padding-right: 25px;
   float: left;
   border-right: 1px solid white;
 }
-#ilTopBar.ilTopBar .po5-TitleContainer #po5-gufLogo {
-  height: 80px;
+.po5-TitleContainer #po5-gufLogo {
+  max-height: 80px;
 }
-#ilTopBar.ilTopBar .po5-TitleContainer .ilTopTitle {
+.po5-TitleContainer .ilTopTitle {
   font-size: 30pt;
   font-family: "Times New Roman", Times, serif;
   font-weight: normal;
   padding: 12px 0 0 200px;
   float: none;
 }
-#ilTopBar.ilTopBar .po5-TitleContainer .ilTopSubtitle {
+.po5-TitleContainer .ilTopSubtitle {
   padding: 2px 0 0 200px;
 }
-#ilTopBar.ilTopBar div#po3-skyline {
+div#po3-skyline {
   /* Absolut positioniert... */
 
   display: inline-block;
@@ -12496,7 +12739,7 @@ div.ilHeaderAlert {
   left: 600px;
   top: 34px;
 }
-#ilTopBar.ilTopBar div#po3-skyline canvas {
+div#po3-skyline canvas {
   position: absolute;
   top: 0;
   left: 0;
@@ -12506,7 +12749,7 @@ div.ilHeaderAlert {
   -o-transition: opacity 600ms linear;
   transition: opacity 600ms linear;
 }
-#ilTopBar.ilTopBar div#po3-skyline a.running canvas {
+div#po3-skyline a.running canvas {
   opacity: 1;
   -webkit-transition: opacity 600ms linear;
   -moz-transition: opacity 600ms linear;
@@ -12516,26 +12759,34 @@ div.ilHeaderAlert {
 /* Responsive MainMenu Button */
 #ilTopNav button.navbar-toggle {
   background-color: #004277;
-}
-#ilTopNav button.navbar-toggle:hover {
-  background-color: #005eaa;
+  left: 40px;
+  top: 0px;
 }
 /**
 * MainMenu
 */
-.ilMainMenu.ilTopFixed {
-  top: 138px;
+#ilTopBarNav .dropdown.open,
+#ilTopBarNav li:hover,
+#ilTopBarNav li:focus {
+  background-color: #005eaa;
+  color: #393939;
 }
-#ilTopNav .navbar-nav > .open > a:focus,
-#ilTopNav .navbar-nav > li.open > a {
+ilTopFixed .navbar-nav > .open > a:focus {
   border-top: none;
+}
+#ilTopNav.navbar {
+  min-height: none;
+  margin: 0px;
 }
 #ilTopNav.navbar > .navbar-collapse,
 #ilTopNav.navbar {
   padding: 0;
 }
 #ilTopNav .navbar-nav > li {
-  margin: 0;
+  margin: 0px;
+}
+#ilTopNav .navbar-nav > li.open > a {
+  border-top: none;
 }
 #ilTopNav .navbar-nav > li > a {
   border-top: 0px;
@@ -12557,6 +12808,7 @@ div.ilHeaderAlert {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
   background-color: #393939;
   color: #ffffff;
+  border-top: none;
 }
 /**
 * Dropdown Menu
@@ -12568,7 +12820,7 @@ div.ilHeaderAlert {
 }
 .dropdown-menu,
 .dropdown-menu li > a {
-  background-color: #dfdfdf;
+  background-color: #f1f1f1;
   color: #393939;
 }
 .dropdown-menu li > a:hover,
@@ -12579,31 +12831,9 @@ div.ilHeaderAlert {
 /**
 * User Setting Buttons
 */
-#ilTopBarNav {
-  margin-top: 59px;
-}
 #ilTopBarNav > li > a {
   background-color: #004277;
-}
-#ilTopBarNav > li > a:hover,
-#ilTopBarNav > li > a:active,
-#ilTopBarNav > li > a:focus {
-  background-color: #005eaa;
-}
-#ilTopBarNav .dropdown.open,
-#ilTopBarNav li:hover,
-#ilTopBarNav li:focus {
-  background-color: #005eaa;
-}
-#ilTopBarNav > .active > a,
-#ilTopBarNav > .open > a,
-#ilTopBarNav > .active > a:hover,
-#ilTopBarNav > .open > a:hover,
-#ilTopBarNav > .active > a:active,
-#ilTopBarNav > .open > a:active,
-#ilTopBarNav > .active > a:focus,
-#ilTopBarNav > .open > a:focus {
-  background-color: #dfdfdf;
+  top: 36px;
 }
 #ilTopBarNav .dropdown-menu a {
   color: #393939;
@@ -12624,37 +12854,28 @@ div.ilHeaderAlert {
 /* no left Banner, Content responsive */
 @media screen and (max-width: 767px) {
   #ilTopBar.ilTopBar {
+    background-image: url(images/schema_unifr_marg.png);
+    background-repeat: no-repeat;
     height: 40px;
   }
-  .ilTopFixed {
-    left: 0px;
+  #ilTopBarNav > li > a {
+    background-color: #007add;
+    top: 0px;
   }
   .ilMainMenu.ilTopFixed {
     top: 40px;
   }
-  .ilFixedTopSpacer,
-  .ilFixedTopSpacerBarOnly {
-    margin-top: 10px;
-  }
-  #ilTopBarNav {
-    margin-top: 0px;
-  }
   #ilTopBarNav.dropdown-menu {
     background-color: #f1f1f1;
+    top: 40px;
   }
   .ilMainHeader,
   .ilMainHeader.ilTopFixed,
   .ilTopSubtitle,
   .ilTopTitle,
   .po5-TitleContainer,
-  #ilTopBar.ilTopBar div#po3-skyline {
+  .po3-skyline {
     display: none;
-  }
-  #ilTopNav {
-    margin: 0px 0 0 0px;
-  }
-  #ilTopNav.navbar {
-    height: 0px;
   }
 }
 /**
@@ -12684,9 +12905,9 @@ a#imgtree {
   max-width: 95% !important;
   right: 0px;
 }
-#ilTopNav .navbar-nav {
-  font-family: "arial";
-  font-size: 12;
+/* Categorie table */
+.ilContainerListItemContent ul.dropdown-menu li {
+  list-style-type: none;
 }
 /**
 * Footer
@@ -12786,12 +13007,6 @@ div.ilBlockRow1 {
 .ilFrmPostTitle .alert-danger {
   background-color: inherit !important;
   border: inherit !important;
-}
-/* make the alert warning message box (delete confirmation etc. better visible ) */
-.alert-warning {
-  background-color: #fe7613;
-  border-color: #451d00;
-  color: #aa4801;
 }
 /*
  * Bei Container-Auflistungen (Kategorieseiten etc.) "Aktionen"
