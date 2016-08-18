@@ -12677,21 +12677,6 @@ div.ilHeaderAlert {
   background-color: #aa010f;
   float: right;
 }
-/* make the alert warning message box (delete confirmation etc. better visible ) */
-.alert-warning {
-  background-color: #fe7613;
-  border-color: #451d00;
-  color: #aa4801;
-}
-/* Left Banner, Content normal */
-@media screen and (min-width: 767px) {
-  .ilTopBar {
-    height: 100px;
-  }
-  #ilTopBarNav .dropdown-menu {
-    top: 76px !important;
-  }
-}
 /**
 * ILIAS Head
 */
@@ -12700,7 +12685,8 @@ div.ilHeaderAlert {
   margin: 0;
 }
 .ilFixedTopSpacer {
-  padding-top: 10px;
+  margin-top: 0;
+  padding-top: 5px;
 }
 #ilTopBar.ilTopBar {
   background-color: #005eaa;
@@ -12759,8 +12745,9 @@ div#po3-skyline a.running canvas {
 /* Responsive MainMenu Button */
 #ilTopNav button.navbar-toggle {
   background-color: #004277;
-  left: 40px;
-  top: 0px;
+}
+#ilTopNav button.navbar-toggle:hover {
+  background-color: #005eaa;
 }
 /**
 * MainMenu
@@ -12771,7 +12758,8 @@ div#po3-skyline a.running canvas {
   background-color: #005eaa;
   color: #393939;
 }
-ilTopFixed .navbar-nav > .open > a:focus {
+ilTopFixed .navbar-nav > .open > a:focus,
+#ilTopNav .navbar-nav > li.open > a {
   border-top: none;
 }
 #ilTopNav.navbar {
@@ -12820,7 +12808,7 @@ ilTopFixed .navbar-nav > .open > a:focus {
 }
 .dropdown-menu,
 .dropdown-menu li > a {
-  background-color: #f1f1f1;
+  background-color: #dfdfdf;
   color: #393939;
 }
 .dropdown-menu li > a:hover,
@@ -12831,41 +12819,73 @@ ilTopFixed .navbar-nav > .open > a:focus {
 /**
 * User Setting Buttons
 */
+#ilTopBarNav {
+  margin-top: 59px;
+}
 #ilTopBarNav > li > a {
   background-color: #004277;
-  top: 36px;
 }
-#ilTopBarNav .dropdown-menu a {
-  color: #393939;
+#ilTopBarNav > li > a:hover,
+#ilTopBarNav > li > a:active,
+#ilTopBarNav > li > a:focus,
+#ilTopBarNav .dropdown.open,
+#ilTopBarNav li:hover,
+#ilTopBarNav li:focus {
+  background-color: #005eaa;
 }
-#ilTopBarNav .dropdown-menu a:hover {
-  background-color: #393939;
-  color: #ffffff;
+#ilTopBarNav > .active > a,
+#ilTopBarNav > .open > a,
+#ilTopBarNav > .active > a:hover,
+#ilTopBarNav > .open > a:hover,
+#ilTopBarNav > .active > a:active,
+#ilTopBarNav > .open > a:active,
+#ilTopBarNav > .active > a:focus,
+#ilTopBarNav > .open > a:focus {
+  background-color: #dfdfdf;
 }
 #ilTopBarNav .dropdown-menu {
   background-color: #dfdfdf;
 }
-#ilTopBarNav .dropdown-menu #ilMMSearchMenu a {
+#ilTopBarNav .dropdown-menu a {
+  color: #393939;
+}
+#ilTopBarNav .dropdown-menu .dropdown-menu a:hover {
+  background-color: #393939;
+  color: #ffffff;
+}
+#ilTopBarNav .dropdown-menu .dropdown-menu #ilMMSearchMenu a {
   color: #393939;
 }
 #ilMMSearchMenu p {
   color: #393939;
 }
 /* no left Banner, Content responsive */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #ilTopBar.ilTopBar {
-    background-image: url(images/schema_unifr_marg.png);
-    background-repeat: no-repeat;
     height: 40px;
   }
-  #ilTopBarNav > li > a {
-    background-color: #007add;
-    top: 0px;
+  .ilTopFixed {
+    left: 0px;
+  }
+  .ilMainMenu {
+    background-color: #f1f1f1;
+  }
+  .ilMainMenu .ilContainerWidth {
+    padding: 0;
+    max-width: 100% !important;
+    width: 100%;
   }
   .ilMainMenu.ilTopFixed {
     top: 40px;
   }
-  #ilTopBarNav.dropdown-menu {
+  .ilFixedTopSpacer,
+  .ilFixedTopSpacerBarOnly {
+    margin-top: 10px;
+  }
+  #ilTopBarNav {
+    margin-top: 0px;
+  }
+  #ilTopBarNav .dropdown-menu {
     background-color: #f1f1f1;
     top: 40px;
   }
@@ -12874,8 +12894,41 @@ ilTopFixed .navbar-nav > .open > a:focus {
   .ilTopSubtitle,
   .ilTopTitle,
   .po5-TitleContainer,
-  .po3-skyline {
+  #ilTopBar.ilTopBar div#po3-skyline {
     display: none;
+  }
+  #ilTopNav {
+    margin: 0px 0 0 0px;
+    width: 100%;
+  }
+  #ilTopNav .navbar-nav {
+    margin: 0;
+    background-color: #004277;
+    color: white;
+  }
+  #ilTopNav .navbar-nav > li > a {
+    color: white;
+    padding: 8px 10px;
+  }
+  #ilTopNav .navbar-nav .dropdown-menu li > a,
+  #ilTopNav .navbar-nav .dropdown-menu .divider {
+    background-color: #005eaa;
+    color: white;
+  }
+  #ilTopNav .navbar-nav > .active > a,
+  #ilTopNav .navbar-nav > .active > a:hover,
+  #ilTopNav .navbar-nav > .active > a:active,
+  #ilTopNav .navbar-nav > .active > a:focus,
+  #ilTopNav .navbar-nav > .open > a,
+  #ilTopNav .navbar-nav > .open > a:hover,
+  #ilTopNav .navbar-nav > .open > a:active,
+  #ilTopNav .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu .dropdown-header {
+    background-color: #004277;
+    color: #ffffff;
+    border-top: none;
   }
 }
 /**
@@ -13007,6 +13060,12 @@ div.ilBlockRow1 {
 .ilFrmPostTitle .alert-danger {
   background-color: inherit !important;
   border: inherit !important;
+}
+/* make the alert warning message box (delete confirmation etc. better visible ) */
+.alert-warning {
+  background-color: #fe7613;
+  border-color: #451d00;
+  color: #aa4801;
 }
 /*
  * Bei Container-Auflistungen (Kategorieseiten etc.) "Aktionen"

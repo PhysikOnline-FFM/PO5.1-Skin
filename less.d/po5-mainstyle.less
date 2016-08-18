@@ -19,25 +19,6 @@ div.ilHeaderAlert {
   float: right;
 }
 
-/* make the alert warning message box (delete confirmation etc. better visible ) */
-.alert-warning {
-  background-color: lighten(@brand-warning, 20%);
-  border-color: darken(@brand-warning, 20%);
-  color: @brand-warning;
-}
-
-/* Left Banner, Content normal */
-@media screen and (min-width: 767px) {
-  .ilTopBar {
-	height: 100px; //marko
-  }
-
-  #ilTopBarNav .dropdown-menu {
-	top: 76px !important;
-  }
-
-}
-
 /**
 * ILIAS Head
 */
@@ -47,8 +28,8 @@ div.ilHeaderAlert {
 }
 
 .ilFixedTopSpacer {
-  // padding-top: 140px;
-  padding-top: 10px;
+  margin-top: 0;
+  padding-top: 5px; // Header ist nicht mehr fixed, daher reicht weniger. PA;
 }
 
 #ilTopBar.ilTopBar {
@@ -109,22 +90,25 @@ div#po3-skyline {
     }
 }
 
-/* Responsive MainMenu Button */
-#ilTopNav button.navbar-toggle {
-  background-color: @darker1;
-  left: 40px;
-  top: 0px; //marko
+ /* Responsive MainMenu Button */
+ #ilTopNav button.navbar-toggle {
+   background-color: @darker1;
+   //left: 40px;
+   //top: 0px; //marko
+}
+#ilTopNav button.navbar-toggle:hover {
+    background-color: @main-color;
 }
 
 /**
 * MainMenu
 */
-
 #ilTopBarNav .dropdown.open, #ilTopBarNav li:hover, #ilTopBarNav li:focus {
   background-color: @main-color;
   color: @second-color;
 }
-ilTopFixed .navbar-nav > .open > a:focus {
+ilTopFixed .navbar-nav > .open > a:focus,
+#ilTopNav .navbar-nav > li.open > a {
   border-top: none;
 }
 
@@ -165,7 +149,7 @@ ilTopFixed .navbar-nav > .open > a:focus {
   background-color: @second-color;
   color: #ffffff;
   border-top: none; //po5, wichtig für #ilTopNav .navbar-nav > .open > a:hover
-}
+ }
 
 /**
 * Dropdown Menu
@@ -177,11 +161,12 @@ ilTopFixed .navbar-nav > .open > a:focus {
 }
 
 .dropdown-menu, .dropdown-menu li > a {
-  background-color: @body-bg;
+  background-color: @highlight4;
   color: @second-color;
 }
 
-.dropdown-menu li > a:hover, .dropdown-menu li > a:focus {
+.dropdown-menu li > a:hover, 
+.dropdown-menu li > a:focus {
   background-color: @second-color;
   color: #ffffff;
 }
@@ -189,26 +174,43 @@ ilTopFixed .navbar-nav > .open > a:focus {
 /**
 * User Setting Buttons
 */
+#ilTopBarNav {
+  margin-top: 59px;
+}
 #ilTopBarNav > li > a {
   background-color: @darker1;
-  top: 36px;
 }
-
-#ilTopBarNav .dropdown-menu a {
-  color: @second-color;
+#ilTopBarNav > li > a:hover, 
+#ilTopBarNav > li > a:active, 
+#ilTopBarNav > li > a:focus,
+#ilTopBarNav .dropdown.open, 
+#ilTopBarNav li:hover, 
+#ilTopBarNav li:focus {
+  background-color: @main-color;
 }
-
-#ilTopBarNav .dropdown-menu a:hover {
-  background-color: @second-color;
-  color: #ffffff;
-}
-
-#ilTopBarNav .dropdown-menu {
+#ilTopBarNav > .active > a, 
+#ilTopBarNav > .open > a, 
+#ilTopBarNav > .active > a:hover, 
+#ilTopBarNav > .open > a:hover, 
+#ilTopBarNav > .active > a:active, 
+#ilTopBarNav > .open > a:active, 
+#ilTopBarNav > .active > a:focus, 
+#ilTopBarNav > .open > a:focus {
   background-color: @highlight4;
 }
-
-#ilTopBarNav .dropdown-menu #ilMMSearchMenu a {
-  color: @second-color;
+#ilTopBarNav .dropdown-menu {
+  background-color: @highlight4;
+  
+  a { color: @second-color; }
+  
+  .dropdown-menu a:hover {
+    background-color: @second-color;
+    color: #ffffff;
+  }
+  
+  .dropdown-menu #ilMMSearchMenu a {
+    color: @second-color;
+  }
 }
 
 #ilMMSearchMenu p {
@@ -217,26 +219,38 @@ ilTopFixed .navbar-nav > .open > a:focus {
 
 /* no left Banner, Content responsive */
 // placed here to be able to switch ilTopBar height responsively
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #ilTopBar.ilTopBar {
-	background-image: url(images/schema_unifr_marg.png); //marko
-	background-repeat: no-repeat; //marko
-	height: 40px; //marko
+	height: 40px;
   }
 
-  #ilTopBarNav > li > a {
-	background-color: @lighter1;
-	top: 0px;
+  .ilTopFixed {
+    left:0px;
   }
-
-  .ilMainMenu.ilTopFixed {
-	top: 40px;
+  
+  .ilMainMenu {
+    background-color: @body-bg;
+    .ilContainerWidth{
+      padding: 0;
+      max-width: 100% !important;
+      width: 100%;
+    }
+    &.ilTopFixed {
+	  top: 40px;
+    }
   }
-
-  #ilTopBarNav.dropdown-menu {
-	background-color: @body-bg; //marko
-	top: 40px;
+  
+  .ilFixedTopSpacer, .ilFixedTopSpacerBarOnly {
+    margin-top: 10px; // Header ist nicht mehr fixed, daher reicht weniger. PA; 
+  } 
+  
+  #ilTopBarNav {
+    margin-top: 0px;
+    
+    .dropdown-menu {
+	  background-color: @body-bg;
+	  top: 40px;
+    }
   }
 
   .ilMainHeader,
@@ -244,9 +258,48 @@ ilTopFixed .navbar-nav > .open > a:focus {
   .ilTopSubtitle,
   .ilTopTitle,
   .po5-TitleContainer,
-  .po3-skyline {
+  #ilTopBar.ilTopBar div#po3-skyline {
 	display: none;
   }
+  
+  #ilTopNav {
+    margin: 0px 0 0 0px;
+        width: 100%;
+        
+    .navbar-nav {
+      margin: 0; //po5, wichtig
+      background-color: @darker1;
+      //background-image: url("data:image/gif;base64,R0lGODlhAQCCAOYAABFpsBBoryh3tyN0tgRgqyl4uAhjrRtvsyBytQpkrS16uTB8uhZssSFztSZ2tyt5uBNqsCV1tglkrR5xtBVrsRhtsjN+uw1mrgdirCp5uBxwsyh4txpushJpsB9xtAxlrgFeqip4uB1xtCV2th1wtBRqsRRrsQdjrBlusjB9ug9oryR1thltsgRhqzJ9uxdtshdsshpvsxpusyR0tiJ0tSJztRJqsAJgqwxmrgljrSd3ty17uQ9nryd2tx9ytC57uQNgqwFfqg5nry98ugJfqwZirABeqjJ+uwtlrix6uQVhrDF9ugAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAABAIIAAAd3gEaCIEGFRIc3QIoEBC1Kj0WRGBgnBgY5EhIJCUidHzgXF0KjPCoBAQAAHTYQECUmFBQMDDAvFRUsKBwyMQcHGhokIhMTHj4ICA0NNTQDAzMrEREjDg49OgICGwUFIRkZDw9J4woKOz/oQ+oLCylL70suR/MWFoEAOw==");
+      //background-repeat: repeat-x;
+      color: white;
+      
+      & > li > a {
+        color: white;
+        padding: 8px 10px;
+      }
+      
+      .dropdown-menu li > a,
+      .dropdown-menu .divider {
+        background-color: @main-color;
+        color: white;
+      }
+    }
+  }
+    #ilTopNav .navbar-nav > .active > a, 
+    #ilTopNav .navbar-nav > .active > a:hover, 
+    #ilTopNav .navbar-nav > .active > a:active, 
+    #ilTopNav .navbar-nav > .active > a:focus, 
+    #ilTopNav .navbar-nav > .open > a, 
+    #ilTopNav .navbar-nav > .open > a:hover, 
+    #ilTopNav .navbar-nav > .open > a:active, 
+    #ilTopNav .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu .dropdown-header {
+      background-color: @darker1;
+      color: #ffffff;
+      border-top: none; //po5, wichtig für #ilTopNav .navbar-nav > .open > a:hover
+     }
 }
 
 /**
@@ -397,3 +450,10 @@ div.ilBlockRow1 {
   background-color: inherit !important;
   border: inherit !important;
 } 
+
+/* make the alert warning message box (delete confirmation etc. better visible ) */
+.alert-warning {
+  background-color: lighten(@brand-warning, 20%);
+  border-color: darken(@brand-warning, 20%);
+  color: @brand-warning;
+}
