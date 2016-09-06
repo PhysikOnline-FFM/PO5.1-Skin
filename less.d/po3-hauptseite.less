@@ -49,7 +49,11 @@ div#po3-hauptseite-top {
 	div#po3-hauptseite-login {
 		//po5 float: right;
 		padding: @padding;
-		
+		h1,h2,h3,h4,h5 { 
+            margin-top: 0; 
+            margin-bottom: 4px;
+            font-size: 100%; 
+        }
 		input {
 			padding: (@padding/2);
 		}
@@ -59,10 +63,10 @@ div#po3-hauptseite-top {
 			
 			&:hover, &:focus, &:active, &.simulate-hover {.bordered(@main-color);}
 		}
-		input#username {width: 100%; margin-bottom: @padding}
+		input#username {width: 99%; margin-bottom: @padding}
 		input#password {width: 60%}
 		input.submit {
-			width: 38%;
+			width: 37.5%;
             margin-left: 1%;
             
 			.bordered(@main-color);

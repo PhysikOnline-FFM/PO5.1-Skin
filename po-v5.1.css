@@ -12468,6 +12468,15 @@ div#po3-hauptseite-top div#po3-hauptseite-willkommen div#more-text {
 div#po3-hauptseite-top div#po3-hauptseite-login {
   padding: 8px;
 }
+div#po3-hauptseite-top div#po3-hauptseite-login h1,
+div#po3-hauptseite-top div#po3-hauptseite-login h2,
+div#po3-hauptseite-top div#po3-hauptseite-login h3,
+div#po3-hauptseite-top div#po3-hauptseite-login h4,
+div#po3-hauptseite-top div#po3-hauptseite-login h5 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 100%;
+}
 div#po3-hauptseite-top div#po3-hauptseite-login input {
   padding: 4px;
 }
@@ -12487,14 +12496,14 @@ div#po3-hauptseite-top div#po3-hauptseite-login input#password.simulate-hover {
   border: 1px solid #005eaa;
 }
 div#po3-hauptseite-top div#po3-hauptseite-login input#username {
-  width: 100%;
+  width: 99%;
   margin-bottom: 8px;
 }
 div#po3-hauptseite-top div#po3-hauptseite-login input#password {
   width: 60%;
 }
 div#po3-hauptseite-top div#po3-hauptseite-login input.submit {
-  width: 38%;
+  width: 37.5%;
   margin-left: 1%;
   border: 1px solid #005eaa;
 }
@@ -12745,6 +12754,9 @@ div#po3-skyline a.running canvas {
 /* Responsive MainMenu Button */
 #ilTopNav button.navbar-toggle {
   background-color: #004277;
+  position: absolute;
+  top: -40px;
+  left: 20px;
 }
 #ilTopNav button.navbar-toggle:hover {
   background-color: #005eaa;
@@ -12965,10 +12977,41 @@ a#imgtree {
 /**
 * Footer
 */
+div#minheight {
+  height: auto;
+}
 footer.ilFooter {
+  height: auto;
+  padding: 8px 0;
+  line-height: 1;
+  font-size: 0.8em;
+  position: static;
   background-color: #005eaa;
-  height: 30px;
-  padding: 2px 0 0 17px;
+}
+footer.ilFooter div.ilFooterContainer {
+  color: #dfdfdf;
+}
+footer.ilFooter div.ilFooterContainer #current_perma_link {
+  width: auto;
+  font-size: 100%;
+  padding: 0;
+  margin-left: 4px;
+  background-color: transparent;
+  border: none;
+}
+footer.ilFooter a {
+  color: #ffffff;
+}
+footer.ilFooter h3 {
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 100%;
+}
+footer.ilFooter ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0;
 }
 /**
 * Buttons
@@ -13066,6 +13109,124 @@ div.ilBlockRow1 {
   background-color: #fe7613;
   border-color: #451d00;
   color: #aa4801;
+}
+/* Aufklapp-Bereich, POTT #696
+   Gibts genauso im PWP, dort nennt es sich "PhysikOnline Universe",
+   daher gleicher Name hier
+ */
+#po-universe {
+  background-color: rgba(1, 100, 170, 0.05);
+  border-bottom: 2px solid #0163AA;
+  border-top: 2px solid #0163AA;
+  margin-top: -10px;
+  padding: 0 1em 1em 1em;
+}
+#po-universe .starter {
+  font-size: 130%;
+  line-height: 132%;
+  color: #333333;
+}
+#po-universe .starter b {
+  font-size: 170%;
+  color: #555;
+}
+#po-universe .boxlinks {
+  zoom: 1;
+  clear: right;
+  text-align: center;
+  min-height: 240px;
+}
+#po-universe .boxlinks:before,
+#po-universe .boxlinks:after {
+  content: " ";
+  display: table;
+}
+#po-universe .boxlinks:after {
+  clear: both;
+}
+#po-universe .boxlinks:before,
+#po-universe .boxlinks:after {
+  content: " ";
+  display: table;
+}
+#po-universe .boxlinks:after {
+  clear: both;
+}
+#po-universe .boxlinks:before {
+  content: '';
+  display: block;
+}
+#po-universe .boxlinks:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#po-universe .boxlinks:before,
+#po-universe .boxlinks:after {
+  content: "";
+  display: table;
+}
+#po-universe .boxlinks:after {
+  clear: both;
+}
+#po-universe .boxlinks:before {
+  content: '';
+  display: block;
+}
+#po-universe .boxlinks:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#po-universe .boxlinks:before,
+#po-universe .boxlinks:after {
+  content: "";
+  display: table;
+}
+#po-universe .boxlinks:after {
+  clear: both;
+}
+#po-universe .boxlinks a {
+  display: inline-block;
+  padding: 17px;
+  text-align: center;
+  width: 188px;
+}
+#po-universe .boxlinks a:hover {
+  background-color: rgba(255, 255, 255, 0.46);
+}
+#po-universe .boxlinks a:hover em {
+  color: #565656;
+}
+#po-universe .boxlinks a em {
+  color: rgba(86, 86, 86, 0.76);
+  display: block;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 12px;
+  font-variant: small-caps;
+}
+#po-universe .boxlinks a span {
+  display: block;
+  font-size: 90%;
+}
+#po-universe .buttons {
+  text-align: right;
+  font-size: 90%;
+  padding-top: 5px;
+}
+#po-universe a.btn,
+#po-universe button {
+  font-size: 90%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+#po-universe a.btn:hover,
+#po-universe button:hover,
+#po-universe a.btn:focus,
+#po-universe button:focus {
+  border-color: #0163AA;
 }
 /*
  * Bei Container-Auflistungen (Kategorieseiten etc.) "Aktionen"
