@@ -3,18 +3,38 @@ div#po3-hauptseite-top {
 	//po5 margin: 0px;
 	padding: 0px;
 	
-	div#po3-hauptseite-willkommen, div#po3-hauptseite-login {
+	div#po3-hauptseite-willkommen, div#po3-hauptseite-login, div#po5-message-area {
 		//po5 .bordered;
 		margin-bottom: (@margin*3);
 		display: inline-bock;
 		background-color: @content-bg;
+		width: 100%;
 	}
+
+	@hauptseite-box-size: 120px;
+
+	div#po5-message-area {
+		padding: 2*@padding 2*@padding;
+		min-height: @hauptseite-box-size;
+		//overflow: auto;
+
+		.panel-group {
+			margin: 0px;
+		}
+
+		.panel-body {
+			background-color: white;
+		}
+
+	}
+
+
 	
 	div#po3-hauptseite-willkommen {
 		//po5 float: left;
 		//po5 width: 640px;
-		padding: @padding 2*@padding;
-		min-height: 87px;
+		padding: 2*@padding 2*@padding;
+		min-height: @hauptseite-box-size;
 		//po5 font-size: 0.9em;
 		color: @highlight1;
 		text-align: center;
@@ -46,7 +66,7 @@ div#po3-hauptseite-top {
         }
 	}
 	
-	div#po3-hauptseite-login {
+	/*div#po3-hauptseite-login {
 		//po5 float: right;
 		padding: @padding;
 		h1,h2,h3,h4,h5 { 
@@ -71,7 +91,7 @@ div#po3-hauptseite-top {
             
 			.bordered(@main-color);
 		}
-	}
+	}*/
 }
 
 div#po3-hauptseite-tile {
@@ -112,6 +132,12 @@ div#po3-hauptseite-tile {
 			.po3-tile-caption-sub {
 				font-size: 1.0em;
 				font-style: oblique;
+			}
+		}
+
+		@media (max-width: 991px) {
+			.po3-tile-caption, .po3-tile {
+				opacity: 1;
 			}
 		}
 	}

@@ -2,6 +2,7 @@
  * Modulares Starter-System fuer Po3-JavaScripte
  *
  *
+ *
  **/
 
 if(!window.po) window.po = {}; // PhysikOnline Namespace
@@ -12,7 +13,7 @@ po.startup.modules = [
 	'anpassungen',
 	'feedback', // feedback depends on anpassungen
 	'hauptseite', // independent
-	'universe', // independent
+	//'universe', // independent
 	//'werbung', //independent
 ];
 

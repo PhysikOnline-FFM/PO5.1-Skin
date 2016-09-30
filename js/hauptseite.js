@@ -40,7 +40,12 @@ po.hauptseite.setup = function() {
 		    createCookie(name,"",-1);
 		}
 		// Cookie loeschen!
+		// returned null:
+		// console.log("PHPSESSID: "+readCookie("PHPSESSID"));
 		eraseCookie("PHPSESSID");
+		
+		// console.log("alle Cookies nacher: "+document.cookie);
+
 
 		return true; // Formular absenden!
 	});
@@ -62,12 +67,12 @@ po.hauptseite.contentManipulation = function() {
 	
 	// Entferne Willkommen+Login-Box,
 	// um sie ggf. später außerhalb des regulären Content-Bereichs wieder einzufügen.
-	var block = $("#po3-hauptseite-top").detach();
+	/*var block = $("#po3-hauptseite-top").detach();
 	
 	if ($("#ilTopBarNav a[href^=login]").length !== 0){
 		// Wenn nicht angemeldet
 		$("#po-hauptseite").prepend(block);
-	}
+	}*/
 	
 	// Füge PodcastWiki Zeile ein
 	//$("#po-hauptseite table.ilContainerBlock").append("<tr id='item_row_podcastwiki' class='ilCLIRow2'><td class='ilCLI'><div id='po3-podcastwiki' class='ilContainerListItemOuter'><div><a href='http://podcast-wiki.physik.uni-frankfurt.de/'><img width='22' src='/local/logos/podcast-goethe-klein.png' title='Symbol Kategorie' alt='' style='position: absolute;  padding: 0px;'></img></a></div><div style='margin: 0px 0px 0px 25px; padding: 0px;'><div class='il_ContainerListItem'><div class='po3-itemHeader'><div style='float:left;padding-bottom: 5px'><h4 class='il_ContainerItemTitle'><a class='il_ContainerItemTitle' href='http://podcast-wiki.physik.uni-frankfurt.de/'>  Podcast Wiki Physik</a></h4></div></div><div class='il_Description' style='clear:both; zoom:1;'>PodcastWiki ist ein studentisches Videoprojekt, das physikalische Experimente vorführt, Vorlesungsinhalte erklärt oder Arbeitsgruppen des Fachbereichs Physik der Goethe-Universität vorstellt.</div><div style='clear:both;'></div></div></div></div></td></tr>");

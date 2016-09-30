@@ -2,13 +2,15 @@
 	<div class="container-fluid ilContainerWidth">
 		<div class="row">
             <div class="po5-TitleContainer">
-                <div class="po5-Logo">
-                    <a href="/" title="Startseite PhysikOnline"><img id="po5-gufLogo" src="/Customizing/global/skin/po-v5.1/images/uni_head_official-colorinverted.svg" alt="" /></a>
-                </div>
-                <!-- BEGIN header_top_title -->
-                <div class="ilTopTitle">{TXT_HEADER_TITLE}</div>
-                <div class="ilTopSubtitle">Das eLearning-Portal des Fachbereichs Physik</div>
-                <!-- END header_top_title -->
+                <a href="/" title="Startseite PhysikOnline">
+                  <div class="po5-Logo">
+                      <img id="po5-gufLogo" src="/Customizing/global/skin/po-v5.1/images/uni_head_official-colorinverted.svg" alt="" />
+                  </div>
+                  <!-- BEGIN header_top_title -->
+                  <div class="ilTopTitle">{TXT_HEADER_TITLE}</div>
+                  <div class="ilTopSubtitle">Das eLearning-Portal des Fachbereichs Physik</div>
+                  <!-- END header_top_title -->
+                </a>
             </div>
             <div id="po3-skyline">
                 <img src="/Customizing/global/skin/po-v5.1/images/skyline.png" alt="" />
@@ -107,6 +109,7 @@
 	<div class="col-md-12">
 		<nav id="ilTopNav" class="navbar navbar-default pull-right" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
+	    <!-- BEGIN4 userloggedin -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ilMainMenuEntries">
                     <span class="sr-only">Toggle navigation</span>
@@ -116,7 +119,7 @@
                 </button>
                 <!-- <a class="navbar-brand" href="#">Brand</a> -->
             </div>
-
+	    <!-- END4 userloggedin -->
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="ilMainMenuEntries">
                 {MAIN_MENU_LIST_ENTRIES}

@@ -4,8 +4,11 @@
  */
 
 
-#ilAll, body, html {
+#ilAll, body, html, .po3-contentContainer, .po3-contentBlock {
   background-color: @body-bg;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100% !important;
 }
 
 // Change subheading "Status: Offline" to red
@@ -63,7 +66,11 @@ div.ilHeaderAlert {
     .ilTopSubtitle {
         padding: 2px 0 0 200px;
     }
-}
+
+    a:hover .ilTopTitle, a:hover .ilTopSubtitle {
+      text-decoration: none;
+    }
+} 
 
 div#po3-skyline {
     /* Absolut positioniert... */
@@ -348,7 +355,7 @@ div#minheight {
 }
 footer.ilFooter {
   height: auto;
-  padding: 8px 0;
+  padding: 8px 8px;
   line-height: 1;
   font-size: 0.8em;
   position: static;
@@ -378,6 +385,13 @@ footer.ilFooter {
     margin: 0;
   }
 }
+
+/*.po5Footer {
+  //position: absolute;
+  right: 0;
+  bottom: 0 !important;
+  left: 0;
+}*/
 
 /**
 * Buttons

@@ -6,6 +6,7 @@
  *
  * Nutzt po.anpassungen.werkzeugbox.
  *
+ * Anpassungen an ILIAS 5.1 - LG 28.09.16
  **/
 
 if(!window.po) window.po = {}; // PhysikOnline Namespace
@@ -18,7 +19,8 @@ po.feedback.settings = {
 
 po.feedback.setup = function() {
 	if(po.anpassungen) {
-		po.anpassungen.werkzeugbox.append('<li><a href="#load_feedback" id="po-loadfeedback" title="Schickt einen Screenshot mit Problembeschreibung an das Physikelearning-Team">Problem berichten</a></li>');
+		//po.anpassungen.werkzeugbox.append('<li><a href="#load_feedback" id="po-loadfeedback" title="Schickt einen Screenshot mit Problembeschreibung an das Physikelearning-Team">Problem berichten</a></li>');
+		po.anpassungen.werkzeugbox.append('<a href="#load_feedback" id="po-loadfeedback" title="Schickt einen Screenshot mit Problembeschreibung an das Physikelearning-Team">Problem berichten</a>');
 		$("#po-loadfeedback").click(po.feedback.run);
 	} else {
 		log("po feedback system: Cannot setup because require po.anpassungen!");
