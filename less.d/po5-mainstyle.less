@@ -6,7 +6,6 @@
 
 #ilAll, body, html, .po3-contentContainer, .po3-contentBlock {
   background-color: @body-bg;
-  overflow-x: hidden;
   width: 100%;
   min-height: 100% !important;
 }
@@ -67,9 +66,10 @@ div.ilHeaderAlert {
         padding: 2px 0 0 200px;
     }
 
-    a:hover .ilTopTitle, a:hover .ilTopSubtitle {
+    a {
       text-decoration: none;
     }
+
 } 
 
 div#po3-skyline {
@@ -238,6 +238,8 @@ ilTopFixed .navbar-nav > .open > a:focus,
   
   .ilMainMenu {
     background-color: @body-bg;
+
+    
     .ilContainerWidth{
       padding: 0;
       max-width: 100% !important;
@@ -501,4 +503,13 @@ div.ilBlockRow1 {
   background-color: lighten(@brand-warning, 20%);
   border-color: darken(@brand-warning, 20%);
   color: @brand-warning;
+}
+
+// remove system messages from the DOM
+#block_pdsysmess_0 {
+  display: none;
+}
+
+div.alert-danger {
+  margin-top: 50px;
 }
