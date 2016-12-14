@@ -1,83 +1,306 @@
 <div class="po5Footer row">
-	<div class="col-xs-6 col-md-3">
-		<h3>PhysikOnline</h3>
-		<div class="row">
-			<div class="col-lg-6">
-                <a href="/go/impressum" title="Kontaktadressen">Impressum</a>
-                <br>
-                <a href="/go/nutzungsvereinbarung" target="_blank">Nutzungsbedingungen</a>
-            </div>
-            <div class="col-lg-6">
-    			<a href="/go/datenschutz">Datenschutzerkl&auml;rung</a>
-                <br>
-    			<span id="js-only-feedback"></span>
-            </div>
-			<!--<a href="/projekt" title="Zum PhysikOnline-Projektbereich (Teambereich und Organisation)">Projekt</a>-->
-        </div>
-	</div>
-	<div class="col-xs-6 col-md-3">
-		<h3>Unterprojekte</h3>
+    <div class="col-xs-6 col-md-3">
+        <h3>PhysikOnline</h3>
         <div class="row">
             <div class="col-lg-6">
-                <a href="http://physikonline.uni-frankfurt.de" title="Mehr über PhysikOnline, unsere Projekte und Mitarbeiter">Über uns</a>
+                <a href="/go/impressum" title="Kontaktadressen">Impressum</a>
                 <br>
-                <a href="http://physikonline.uni-frankfurt.de/portal/pages/blog" title="Zum PhysikOnline-Projektbereich (Teambereich und Organisation)">Blog</a>
+
+
+                <!-- old Modal Box -->
+                <!--
+                <a href="#nutzungsvereinbarungModal">Nutzungsbedingungen</a>
+                <div id="nutzungsvereinbarungModal" class="modalPopup" aria-hidden="true">
+                    <div>
+                        <a href="#close" title="Close" class="close">X</a>
+
+                        <object id="page" type="text/html" data="/go/nutzungsvereinbarung"
+                                width="100%" height="100%">
+                        </object>
+                    </div>
+                </div>
+                -->
+                <!-- old Modal Box END-->
+
+
+<!-- Bootstrap Modal Box -->
+                <!--<a href="/go/nutzungsvereinbarung" target="_blank">Nutzungsbedingungen</a>-->
+                <a data-toggle="modal" href="#NutzungsbedingungenModal">Nutzungsbedingungen</a>
+
+<!-- Modal -->
+                <div class="modal fade" id="NutzungsbedingungenModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h1 class="modal-title">Allgemeine Nutzungsbedingungen für Physik Online</h1>
+                            </div>
+                            <div class="modal-body">
+<!--CONTENT-->
+
+                                <h2>1. Vorbemerkungen</h2>
+                                <p>Physik Online ist ein eLearning-Portal für die Mitglieder des Fachbereichs Physik und
+                                    Studierende anderer
+                                    Fachbereiche mit physikalischem Nebenfach. Mit der Nutzung von Physik Online
+                                    erklären Besucher/Benutzer sich mit
+                                    den hier formulierten Nutzungsbedingungen einverstanden. Falls Sie Fragen zur
+                                    Nutzung von Physik Online haben,
+                                    kontaktieren Sie bitte das Physik Online-Team unter
+                                    <a href="mailto:elearning@th.physik.uni-frankfurt.de">elearning@th.physik.uni-frankfurt.de</a>.
+                                </p>
+
+                                <h2>2. Regelungsbereich</h2>
+                                <p>Diese Nutzungsbedingungen ergänzen die Allgemeine Nutzungsordnung für die
+                                    Informationsverarbeitungs- und
+                                    Kommunikations-Infrastruktur der Johann Wolfgang Goethe-Universität (Allgemeine
+                                    IuK-Nutzungsordnung) vom 5. Juni
+                                    2001 in der Fassung vom 11. September 2008 sowie die eLearning-Satzung der
+                                    Goethe-Universität, sobald
+                                    verabschiedet. Alle hier geregelten Themen beziehen sich ausschließlich auf das
+                                    eLearning-Portal „Physik
+                                    Online“. Direkt daran verknpüfende Dienste im Rahmen des institutsweiten Netzes bzw.
+                                    des universitätsweiten
+                                    Campusnetzes werden in anderen Dokumenten geregelt. Nähere Auskünfte dazu sind im
+                                    Institut für Theoretische
+                                    Physik respektive dem Hochschulrechenzentrum zu erfragen.</p>
+
+                                <h2>3. Nutzungsberechtigte</h2>
+                                <p>Alle Mitglieder und Angehörige der Goethe-Universität Frankfurt am Main, für die ein
+                                    HRZ-Account ausgegeben
+                                    wurde, oder für die vom Physik Online-Team ein Benutzeraccount ausgestellt wurde,
+                                    sind berechtigt, das Physik
+                                    Online-Lernsystem im Rahmen der Forschung und Lehre sowie Aus- und Weiterbildung zu
+                                    nutzen.</p>
+                                <p>Sonstige Personen wird die Nutzung öffentlicher Bereiche im eLearning-Portal
+                                    gestattet, sofern dieser Nutzung
+                                    keine Rechte Dritter entgegenstehen und Interessen der Goethe-Universität nicht
+                                    verletzt werden.</p>
+
+                                <h2>4. Systembetreiber</h2>
+
+                                <p>Systembetreiber gemäß § 3 IuK-Nutzungsordnung ist der Lehrstuhl von Prof. Dr. Lüdde
+                                    am Institut für Theoretische
+                                    Physik, erster Ansprechpartner ist das Physik Online-Team.</p>
+
+                                <ol>
+                                    <li>Prof. Dr. Hans Jürgen Lüdde
+                                    <li>Institut für Theoretische Physik
+                                    <li>Goethe-Universität Frankfurt am Main
+                                    <li>Max-von-Laue-Straße 1
+                                    <li>60438 Frankfurt
+                                    <li>Tel. 069/798-7358
+                                    <li>Fax. 069/798-7880
+                                    <li>E-Mail: elearning@th.physik.uni-frankfurt.de
+                                </ol>
+
+
+                                <h2>5. Verpflichtungen der Nutzerinnen und Nutzer</h2>
+                                <p>Die Nutzung von Physik Online erfolgt im Rahmen der <a
+                                        href="http://www.uni-frankfurt.de/org/ltg/admin/pr-abt/regeln/docs/iuk-ordnung-2008.pdf"
+                                        target="_blank">Regelungen
+                                    der IuK-Nutzungsordnung</a>. Auf folgende Punkte wird speziell hingewiesen:</p>
+
+                                <ul>
+                                    <li>Geheimhaltung der eigenen Zugangsdaten: Passwörter sind geheim zu halten. Liegen
+                                        Anzeichen dafür vor, dass
+                                        ein Account kompromittiert ist, insbesondere durch Bekanntwerden des Passwortes,
+                                        wird dieser unverzüglich
+                                        gesperrt und der Umstand dem Hochschulrechenzentrum (HRZ) zur Kenntnisnahme
+                                        weitergegeben. Der Inhaber des
+                                        HRZ-Accounts ist im Verdachtsfall verpflichtet, das HRZ darüber im eigenen
+                                        Interesse zu informieren.
+                                    <li>Geheimhaltung lernmodulspezifischer Zugangsdaten: Passwörter, die im Rahmen von
+                                        Lehrveranstaltungen erhalten
+                                        wurden, um Zugang zu geschlossenen Lernmodulen zu ermöglichen, sind, wenn nicht
+                                        anders genannt, gegenüber
+                                        nicht zur Gruppe der Mitglieder und Angehörigen der Goethe-Universität Frankfurt
+                                        gehörenden Personen geheim
+                                        zu halten.
+                                    <li>Urheberrecht: Grenzen der öffentlichen Zugänglichmachung von mehr als kleinen
+                                        Teilen geschützter Werke für
+                                        Forschung und Lehre (§ 52a UhrG) auch bei der Publikation im Internet und in
+                                        geschlossenen Benutzerkreisen
+                                        sowie Strafbarkeit der unerlaubter Verwertung urheberrechtlich geschützter Werke
+                                        (§ 106ff UhrG).
+                                </ul>
+
+                                <h2>6. Berechtigungen der Betreiber</h2>
+
+                                <p>Die Nutzungsberechtigten haben mit Antragstellung für Ihren HRZ-Account oder ihren
+                                    dedizierten Plattformzugang
+                                    die Allgemeine IuK-Nutzungsordnung zur Kenntnis genommen und anerkannt. Bei Verstoß
+                                    gegen diese Regelungen kann
+                                    im Rahmen des § 8 IuK-Nutzungsordnung das Verhalten einzelner Benutzer/innen sowie
+                                    von Ihnen oder über sie
+                                    gespeicherte Informationen untersucht und notwendige Maßnahmen getroffen werden;
+                                    dies kann die Freigabe von
+                                    Informationen bzw. Materialien an Dritte auch ohne die Erlaubnis des/Der Benutzer
+                                    bedeuten.</p>
+                                <p>Das Physik Online-Team behält sich vor, Inhaltte bzw. Materialien, die diesen
+                                    Nutzungsbedingungen oder der
+                                    IuK-Nutzungsordnung widersprechen, zu sprren oder zu löschen. Auf Kursebene liegt es
+                                    in der Verantwortung des
+                                    Lehrenden, nicht mit der IuK-Nutzungsordnung vereinbarenden Inhalte gemäß dieser
+                                    Richtlinie zu löschen.</p>
+                                <p>Zur Sicherstellung des ordnungsgemäßen Betriebes der Lernpattform Physik Online
+                                    (Wartungsarbeiten) kann ebenfalls
+                                    auf die Daten zugegriffen werden.</p>
+
+                                <h2 id="datenschutz">7. Datenschutz</h2>
+                                <p>Physik Online wird im Rahmen der gesetzlichen Bestimmungen und rechtlichen Regelungen
+                                    betrieben, insbesondere der
+                                    Allgemeinen Nutzungsordnung für die Informationsverarbeitungs- und
+                                    Kommunikations-Infrastruktur der Johann
+                                    Wolfgang Goethe-Universität (Allgemeine IuK-Nutzungsordnung) vom 5. Juni 2001 in der
+                                    Fassung vom 11. September
+                                    2008.</p>
+
+                                <p>Nach dem Hessischen Datenschutzgesetzt (HDSG in seiner geltenden Fassung, zuletzt
+                                    erneuert am 20. Mai 2011) und
+                                    dem Grundsatz der Datensparsamkeit darf das Physik Online-Team nur die für den
+                                    Betrieb erforderlichen Daten der
+                                    Nutzungsberechtigten nutzen, verarbeiten, insbesondere speichern. Weitere
+                                    Informationen dazu sind in den
+                                    folgenden Abschnitten zu finden.</p>
+                                <p>Beim Betrieb der Physik Online-Plattform werden folgende Daten personenbezogener
+                                    Daten unterschieden:</p>
+
+                                <ol>
+                                    <li>Zentrale Anmeldedaten: Name, Vorname sowie Accountinformationen (über eine
+                                        LDAP-Schnittstelle). Diese Daten
+                                        sind erforderlich, um eine eindeutige Authentifizierung eines Nutzers bei der
+                                        Anmeldung am Lernmanagament zu
+                                        gewährleisten.
+                                    <li>Leistungsbezogene Daten (personenbezogene Lernprozessdaten bzw. Bewegungsdaten):
+                                        Alle Daten, die während der
+                                        Arbeit mit Physik Online entstehen, z.B. die Eingabe der Bearbeitung einer von
+                                        dem Lehrenden gestellten
+                                        Aufgabe ins System oder die Nutzung der internen Kommunikationsprogramme. Diese
+                                        Daten sind ausschließlich
+                                        zum Betrieb von Physik Online erforderlich.
+                                    <li>Individuelle personenbezogene Daten (z.B. Ihr Bild). Die Nutzerinnen und Nutzer
+                                        haben das Recht, private
+                                        Daten in ihrem persönlichen Profil zu hinterlegen und ihr Profil öffentlich oder
+                                        anderen Benutzern
+                                        zugänglich zu machen. Sie können diese Daten und -Freigabe jederzeit löschen
+                                        bzw. zurücknehmen.
+                                </ol>
+
+                                <p>Nicht-leistungsbezogene Bewegungsdaten (wer hat wann welche Daten angesehen,
+                                    Downloads, etc.) werden nicht
+                                    personenbezogen (anonymisiert) gespeichert und gemäß den im für die Plattform
+                                    absolvierten Verfahrensverzeichnis
+                                    gelöscht.</p>
+                                <p>Die Datenübertragung zwischen den Nutzerinnen und Nutzern sowie Physik Online erfolgt
+                                    verschlüsselt.</p>
+
+                                <div class="revision">
+                                    Neue Nutzungsbedingungen für Physik Online, Stand 26.09.2014, Version 3,
+                                    <span class="author">Sven K&ouml;ppel.</span>
+                                </div>
+<!--CONTENT-->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+<!--Modal-->
+
+
+            </div>
+            <div class="col-lg-6">
+                <a href="/go/datenschutz">Datenschutzerkl&auml;rung</a>
+                <br>
+                <span id="js-only-feedback"></span>
+            </div>
+            <!--<a href="/projekt" title="Zum PhysikOnline-Projektbereich (Teambereich und Organisation)">Projekt</a>-->
+        </div>
+    </div>
+    <div class="col-xs-6 col-md-3">
+        <h3>Unterprojekte</h3>
+        <div class="row">
+            <div class="col-lg-6">
+                <a href="http://physikonline.uni-frankfurt.de"
+                   title="Mehr über PhysikOnline, unsere Projekte und Mitarbeiter">Über uns</a>
+                <br>
+                <a href="http://physikonline.uni-frankfurt.de/portal/pages/blog"
+                   title="Zum PhysikOnline-Projektbereich (Teambereich und Organisation)">Blog</a>
             </div>
             <div class="col-lg-6">
                 <a href="http://riedberg.tv" title="Schaue Videos zu deinem Campus auf Riedberg.TV">Riedberg TV</a>
                 <br>
-                <a href="https://pokal.uni-frankfurt.de" title="Physik Onlines Kollaborative Arbeits- und Lernplattform">POKAL</a>
+                <a href="https://pokal.uni-frankfurt.de"
+                   title="Physik Onlines Kollaborative Arbeits- und Lernplattform">POKAL</a>
             </div>
         </div>
-	</div>
-	
-	<div id="po-beschreibung" class="col-xs-12 col-md-6">
-		<strong><a href="#">PhysikOnline</a> ist ein student. Projekt des 
-		<a href="http://www.physik.uni-frankfurt.de">Fachbereichs Physik</a> der 
-		<a href="http://www.uni-frankfurt.de" title="Goethe-Universit&auml;t Frankfurt am Main">Goethe-Universit&auml;t</a></strong>
-	</div>
+    </div>
+
+    <div id="po-beschreibung" class="col-xs-12 col-md-6">
+        <strong><a href="#">PhysikOnline</a> ist ein student. Projekt des
+            <a href="http://www.physik.uni-frankfurt.de">Fachbereichs Physik</a> der
+            <a href="http://www.uni-frankfurt.de" title="Goethe-Universit&auml;t Frankfurt am Main">Goethe-Universit&auml;t</a></strong>
+    </div>
     <!--<div class="js-only werkzeuge">-->
-        <!--<h3>Seitenwerkzeuge</h3>
-        <ul>
-             per Javascript eingebunden: -->
-            <!--<li><a href="#">Kurzlink</a></li>-->
-            <!--<li><a href="#">Mobilversion</a></li>-->
-            <!--<li><a href="#">Feedback</a></li>
-        </ul>
-    </div>-->
+    <!--<h3>Seitenwerkzeuge</h3>
+    <ul>
+         per Javascript eingebunden: -->
+    <!--<li><a href="#">Kurzlink</a></li>-->
+    <!--<li><a href="#">Mobilversion</a></li>-->
+    <!--<li><a href="#">Feedback</a></li>
+</ul>
+</div>-->
     <div class="hidden">
-        <bdo class="ilWhiteSpaceNowrap" dir="ltr">powered by ILIAS (v{ILIAS_VERSION})</bdo> | 
+        <bdo class="ilWhiteSpaceNowrap" dir="ltr">powered by ILIAS (v{ILIAS_VERSION})</bdo> |
         <!-- BEGIN items -->
         <a href="{URL_ITEM}"<!-- BEGIN blank --> target="_blank"<!-- END blank -->>{TXT_ITEM}</a>
         <!-- BEGIN item_separator --> | <!-- END item_separator -->
         <!-- END items -->
     </div>
-    
+
     <!-- BEGIN dev_bl -->
     <div id="devmodeBlock">
-    {MEMORY_USAGE}
-    {SESS_INFO}
-    <!-- BEGIN call_history -->
-    <center><br /><table border="0"><tr><td colspan="2">
-    <i>Controller History:</i></td></tr>
-    <!-- BEGIN c_entry --><tr><td class="small">- {C_ENTRY}</td><td class="small">{C_FILE}</td></tr><!-- END c_entry -->
-    </table></center>
-    <!-- END call_history -->
-    <!-- BEGIN included_files -->
-    <a name="devinclsthd"></a>
-    <br /><a href="#devinclsthd" onclick="$('#devinclst').toggle();"><i>Included Files</i> <span class="caret"></span></a>
-    <div id="devinclst" class="xsmall" style="display:none;">
-    <!-- BEGIN i_entry -->
-    {I_ENTRY}<br />
-    <!-- END i_entry -->
+        {MEMORY_USAGE}
+        {SESS_INFO}
+        <!-- BEGIN call_history -->
+        <center><br/>
+            <table border="0">
+                <tr>
+                    <td colspan="2">
+                        <i>Controller History:</i></td>
+                </tr>
+                <!-- BEGIN c_entry -->
+                <tr>
+                    <td class="small">- {C_ENTRY}</td>
+                    <td class="small">{C_FILE}</td>
+                </tr><!-- END c_entry -->
+            </table>
+        </center>
+        <!-- END call_history -->
+        <!-- BEGIN included_files -->
+        <a name="devinclsthd"></a>
+        <br/><a href="#devinclsthd" onclick="$('#devinclst').toggle();"><i>Included Files</i> <span
+            class="caret"></span></a>
+        <div id="devinclst" class="xsmall" style="display:none;">
+            <!-- BEGIN i_entry -->
+            {I_ENTRY}<br/>
+            <!-- END i_entry -->
 
-    </div>
-    <!-- END included_files -->
-    <!-- BEGIN xhtml_validation -->
-    <table class="fullwidth_invisible"><tr><td class="ilInvisibleBorder">
-    {VALIDATION}
-    </td></tr></table>
-    <!-- END xhtml_validation -->
+        </div>
+        <!-- END included_files -->
+        <!-- BEGIN xhtml_validation -->
+        <table class="fullwidth_invisible">
+            <tr>
+                <td class="ilInvisibleBorder">
+                    {VALIDATION}
+                </td>
+            </tr>
+        </table>
+        <!-- END xhtml_validation -->
     </div>
     <!-- END dev_bl -->
 </div>
@@ -85,19 +308,21 @@
 
 <!-- piwik po3, siehe POTT #442 -->
 <script type="text/javascript">
-/* Testweise auskommentiert -> POTT #1326
-var _paq = _paq || [];
-  _paq.push(["trackPageView"]);
-  _paq.push(["enableLinkTracking"]);
+    var _paq = _paq || [];
+    _paq.push(["trackPageView"]);
+    _paq.push(["enableLinkTracking"]);
 
-  (function() {
-    var u="/logs/piwik/";
-    _paq.push(["setTrackerUrl", u+"piwik.php"]);
-    _paq.push(["setSiteId", "2"]);
-    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-  })();
-*/
+    (function () {
+        var u = "/logs/piwik/";
+        _paq.push(["setTrackerUrl", u + "piwik.php"]);
+        _paq.push(["setSiteId", "2"]);
+        var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.defer = true;
+        g.async = true;
+        g.src = u + "piwik.js";
+        s.parentNode.insertBefore(g, s);
+    })();
 </script>
-<noscript><img src="/logs/piwik/piwik.php?idsite=2&amp;rec=1" style="border:0" alt="" /></noscript>
+<noscript><img src="/logs/piwik/piwik.php?idsite=2&amp;rec=1" style="border:0" alt=""/></noscript>
 <!-- End Piwik Code -->
